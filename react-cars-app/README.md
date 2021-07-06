@@ -42,3 +42,19 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+### `Command Used`
+1. npx create-react-app react-cars-app --template redux-typescript
+
+2. yarn add -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
+
+3. yarn add @craco/craco
+
+4. yarn add styled-component twin.macro react-responsive
+
+5. yarn add --dev @types/styled-components
+
+6. yarn add react-burger-menu
+
+7. yarn add -D @types/react-responsive

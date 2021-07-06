@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import tw from "twin.macro";
 import { Logo } from "../Logo";
 import { NavItems } from "./NavItems";
@@ -8,7 +8,7 @@ const NavBarContainer = styled.div`
   min-height: 68px;
   ${tw`
     w-full
-    max-w-2xl
+    max-w-screen-2xl
     flex
     flex-row
     items-center
