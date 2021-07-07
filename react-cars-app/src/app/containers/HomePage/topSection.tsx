@@ -51,8 +51,62 @@ const Slogan = styled.h1`
   `};
 `;
 
+const Description = styled.p`
+  ${tw`
+    text-xs
+    lg:text-sm
+    xl:text-lg
+    sm:max-h-full
+    overflow-hidden
+    max-h-12
+    text-gray-800
+  `};
+`;
+
+const BlobContainer = styled.div`
+  width: 20em;
+  height: 10em;
+  position: absolute;
+  right: -5em;
+  top: -9em;
+  z-index: -1;
+  transform: rotate(-30deg);
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height: max-content;
+  }
+`;
+
+const StandaloneCard = styled.div`
+  width: auto;
+  height: 10em;
+  right: -6em;
+  top: -5em;
+  position: absolute;
+
+  img {
+    width: auto;
+    height: 100%;
+    max-height: fit-content;
+  }
+`;
+
 function TopSection() {
-  return <div></div>;
+  return (
+    <TopSectionContainer>
+      <LeftContainer>
+        <Slogan>Rent The Best Quality Car's With Us</Slogan>
+        <Description>
+          Always choose the best car from our local stores or order it remotely
+          at the best price for you and get the best quality cars for as long as
+          you like
+        </Description>
+      </LeftContainer>
+      <RightContainer></RightContainer>
+    </TopSectionContainer>
+  );
 }
 
 export default TopSection;
