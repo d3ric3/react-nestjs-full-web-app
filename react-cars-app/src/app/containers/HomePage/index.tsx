@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
+import BookCard from "../../components/BookCard";
+import { Marginer } from "../../components/Marginer";
 import { NavBar } from "../../components/NavBar";
 import TopSection from "./TopSection";
 
@@ -20,6 +22,8 @@ export function HomePage() {
     <PageContainer>
       <NavBar />
       <TopSection />
+      <Marginer direction="vertical" margin="4em" />
+      <BookCard />
     </PageContainer>
   );
 }

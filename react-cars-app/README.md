@@ -43,8 +43,8 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-
 ### `Command Used`
+
 1. npx create-react-app react-cars-app --template redux-typescript
 
 2. yarn add -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
@@ -59,4 +59,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 7. yarn add -D @types/react-responsive
 
-8. yarn add @fortawesome/fontawesome-svg-core  @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+8. yarn add @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+
+9. yarn add react-calendar
+
+10. yarn add -D @types/react-calendar
