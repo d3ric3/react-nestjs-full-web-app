@@ -5,6 +5,7 @@ import tw from "twin.macro";
 import MclarenCarImg from "../../../assets/images/mclaren-orange-big.png";
 import BlobImg from "../../../assets/images/blob.svg";
 import { SCREENS } from "../../components/responsive";
+import Button from "../../components/Button";
 
 const TopSectionContainer = styled.div`
   min-height: 400px;
@@ -140,6 +141,14 @@ const StandaloneCar = styled.div`
   }
 `;
 
+const ButtonsContainer = styled.div`
+  ${tw`
+    flex
+    mt-4
+    flex-wrap
+  `}
+`;
+
 function TopSection() {
   return (
     <TopSectionContainer>
@@ -150,6 +159,10 @@ function TopSection() {
           at the best price for you and get the best quality cars for as long as
           you like
         </Description>
+        <ButtonsContainer>
+          <Button text="Book Your Ride" />
+          <Button theme="filled" text="Sell Your Car" />
+        </ButtonsContainer>
       </LeftContainer>
       <RightContainer>
         <BlobContainer>

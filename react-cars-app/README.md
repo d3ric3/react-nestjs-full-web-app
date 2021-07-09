@@ -58,3 +58,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 6. yarn add react-burger-menu
 
 7. yarn add -D @types/react-responsive
+
+8. yarn add @fortawesome/fontawesome-svg-core  @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
