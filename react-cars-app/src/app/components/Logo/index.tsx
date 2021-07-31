@@ -37,7 +37,7 @@ const Image = styled.div`
 
   img {
     width: auto;
-    heightL 100%;
+    height: 100%;
   }
 `;
 
