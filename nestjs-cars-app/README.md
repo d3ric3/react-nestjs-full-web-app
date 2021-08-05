@@ -71,3 +71,15 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+### `Command Used`
+
+1. npm i -g @nestjs/cli
+
+2. nest new nestjs-cars-app
+
+3. yarn add typeorm mysql2 
+
+4. yarn add @nestjs/config
+
+5. yarn add @nestjs/typeorm
