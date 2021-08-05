@@ -78,8 +78,10 @@ Nest is [MIT licensed](LICENSE).
 
 2. nest new nestjs-cars-app
 
-3. yarn add typeorm mysql2 
+3. yarn add typeorm mysql2
 
 4. yarn add @nestjs/config
 
 5. yarn add @nestjs/typeorm
+
+6. yarn add @nestjs/graphql graphql-tools graphql apollo-server-express
