@@ -74,7 +74,7 @@ Nest is [MIT licensed](LICENSE).
 
 ### `Command Used`
 
-1. npm i -g @nestjs/cli
+1. npm i -g @nestjs/cli@7.6.0
 
 2. nest new nestjs-cars-app
 
@@ -82,6 +82,6 @@ Nest is [MIT licensed](LICENSE).
 
 4. yarn add @nestjs/config
 
-5. yarn add @nestjs/typeorm
+5. yarn add @nestjs/typeorm@^7.1.5
 
-6. yarn add @nestjs/graphql graphql-tools graphql apollo-server-express
+6. yarn add @nestjs/graphql@^7.10.6 graphql graphql-tools apollo-server-express@2.x.x
