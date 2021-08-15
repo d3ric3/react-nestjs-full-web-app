@@ -7,14 +7,14 @@ import { Car } from './entities/car';
 export class CarsResolver {
   constructor(private carsService: CarsService) {}
 
-  @Query(() => [Car])
+  @Query((returns) => [Car])
   public async cars(): Promise<Car[]> {
     return await this.carsService.getAllCars().catch((err) => {
       throw err;
     });
   }
 
-  @Mutation(() => Car)
+  @Mutation((returns) => Car)
   public async addNewCar(
     @Args('newCarData') newCarData: NewCarInput,
   ): Promise<Car> {

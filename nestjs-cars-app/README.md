@@ -85,3 +85,5 @@ Nest is [MIT licensed](LICENSE).
 5. yarn add @nestjs/typeorm@^7.1.5
 
 6. yarn add @nestjs/graphql@^7.10.6 graphql graphql-tools apollo-server-express@2.x.x
+
+7. yarn add class-validator class-transformer

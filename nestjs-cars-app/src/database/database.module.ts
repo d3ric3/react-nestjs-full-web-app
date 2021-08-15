@@ -10,6 +10,7 @@ export class DatabaseModule {
   constructor(connection: Connection) {
     if (connection.isConnected) {
       console.log('DB Connected Successfully!');
+      console.log('NODE_ENV: ', process.env.NODE_ENV);
     }
   }
 }
