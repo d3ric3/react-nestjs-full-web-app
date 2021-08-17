@@ -66,3 +66,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 10. yarn add -D @types/react-calendar
 
 11. yarn add @brainhubeu/react-carousel
+
+12. yarn add @apollo/client graphql
