@@ -20,7 +20,7 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/react-redux": "^7.1.7",
-    "graphql": "^15.5.1",
+    "graphql": "^15.5.0",
     "react": "^17.0.2",
     "react-burger-menu": "^3.0.6",
     "react-calendar": "^3.4.0",
@@ -36,7 +36,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "schema:download": "npx apollo service:download --endpoint=http://localhost:9000/graphql ./src/app/graphql-schema.json",
+    "schema:generate-watch": "npx apollo codegen:generate --localSchemaFile=./src/app/graphql-schema.json --target=typescript --tagName=gql --watch"
   },
   "eslintConfig": {
     "extends": "react-app"

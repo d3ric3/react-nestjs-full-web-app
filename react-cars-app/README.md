@@ -68,3 +68,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 11. yarn add @brainhubeu/react-carousel
 
 12. yarn add @apollo/client graphql
+
+13. yarn global add apollo@2.33.6 graphql@15.5.0
