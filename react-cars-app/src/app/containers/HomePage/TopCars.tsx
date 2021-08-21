@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { ICar } from "../../../typings/car";
@@ -7,6 +7,11 @@ import Carousel, { Dots, slidesToShowPlugin } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 import { useMediaQuery } from "react-responsive";
 import { SCREENS } from "../../components/responsive";
+import carService from "../../services/carService";
+import { Dispatch } from "@reduxjs/toolkit";
+import { GetCars_cars } from "../../services/carService/__generated__/GetCars";
+import { setTopCars } from "./slice";
+import { useDispatch } from "react-redux";
 
 const TopCarsContainer = styled.div`
   ${tw`
@@ -44,10 +49,26 @@ const CarsContainer = styled.div`
   `}
 `;
 
+const actionDispatch = (dispatch: Dispatch) => ({
+  setTopCars: (cars: GetCars_cars[]) => dispatch(setTopCars(cars)),
+});
+
 function TopCars() {
   const [current, setCurrent] = useState(0);
 
   const isMobile = useMediaQuery({ maxWidth: SCREENS.sm });
+
+  const { setTopCars } = actionDispatch(useDispatch());
+
+  const fetchTopCars = async () => {
+    const cars = await carService
+      .getCars()
+      .catch((err) => console.log("Error: ", err));
+
+    console.log("Cars: ", cars);
+
+    if (cars) setTopCars(cars);
+  };
 
   const testCar: ICar = {
     name: "Audi S3 Car",
@@ -70,6 +91,10 @@ function TopCars() {
     gearType: "Auto",
     gas: "Petrol",
   };
+
+  useEffect(() => {
+    fetchTopCars();
+  }, []);
 
   const cars = [
     <Car {...testCar2} />,
