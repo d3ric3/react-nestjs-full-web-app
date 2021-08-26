@@ -74,3 +74,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 14. yarn add redux-logger
 
 15. yarn add -D @types/redux-logger
+
+16. yarn add reselect
+
+17. yarn add react-spinners
